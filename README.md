@@ -41,7 +41,8 @@ Reason: Cypress is an excellent choice for automating API testing in most scenar
 **Few Considerations**
 - We can add more log statements to print full API response or a particular API response object for debugging purpose for error scenarios.
 - We can add negative scenarios by playing around the configs and passing wrong tokens, header or body parameters.
-- Constants and Variables should be stored in a secure vault or environment variables
+- Constants and Variables should be stored in an environment variable or test data file.
+- In real scenario, Ids and secrets should be stored in a Vault. As this is a test sandbox environemt, I am calling these parameters directly in the test file. 
 
 **For test cases steps, automation technique/strategy, test output and artefacts, kindly refer the other attached file- Task-1.docs**
 
