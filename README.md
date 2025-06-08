@@ -1,7 +1,7 @@
 # TestAuto
 ## Automate API transactions
 
-Automating test cases with Cypress and JavaScript 
+**Instructions to setup and run the test using Cypress/JavaScript:**
 
 1. Setup
    
@@ -22,3 +22,28 @@ Inside the cypress/e2e/ folder, create a new test file. Here I have automated an
 
 4. Run the Test
 You can run the test in the Cypress Test Runner UI or headlessly
+
+
+**Overview of approach to implement the test case**
+
+Objective: Automate requests to the Airalo Partner API and validate the responses.
+
+Choice of Framework/Language: Cypress/JavaScript
+
+Reason: Cypress is an excellent choice for automating API testing in most scenarios due to its ease of use, real-time debugging, and integration capabilities.
+
+**Automation Approach**
+1)	Define variables and constants
+2)	Automate POST API for obtaining OAuth2 tokens to access the Airalo Partner API, using the provided credentials and save the token to be used in subsequent AIRALO APIs
+3)	Automate POST API to order 6 "merhaba-7days-1gb" eSIMs. Save the order ID to verify configured eSIMS through the GET API.
+4)	Automate GET API to list eSIMs related to your specific order Oobtained through step-3. Ensure the list contains 6 eSIMs, and that all of them have the "merhaba-7days-1gb" package slug.
+
+**Few Considerations**
+- We can add more log statements to print full API response or a particular API response object for debugging purpose for error scenarios.
+- We can add negative scenarios by playing around the configs and passing wrong tokens, header or body parameters.
+- Constants and Variables should be stored in a secure vault or environment variables
+
+**For test output and artefacts, kindly refer- Automate API Requests and Verify Responses.docs**
+
+
+
