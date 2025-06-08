@@ -43,7 +43,7 @@ Reason: Cypress is an excellent choice for automating API testing in most scenar
 - We can add negative scenarios by playing around the configs and passing wrong tokens, header or body parameters.
 - Constants and Variables should be stored in a secure vault or environment variables
 
-**For test output and artefacts, kindly refer- Automate API Requests and Verify Responses.docs**
+**For test cases steps, automation technique/strategy, test output and artefacts, kindly refer the other attached file- Task-1.docs**
 
 
 
