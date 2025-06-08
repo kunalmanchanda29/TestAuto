@@ -9,7 +9,7 @@ Install Node.js: Cypress requires Node.js. Download and install it from the offi
 
 Create a Project: Create a new directory for your project and navigate into it using the command line. 
 
-Initialize npm: Run "npm init" to create a package.json file.
+Initialize npm: Run "npm init" 
 
 Install Cypress: Run "npm install cypress --save-dev"
 
