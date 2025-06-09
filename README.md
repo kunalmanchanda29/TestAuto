@@ -38,13 +38,15 @@ Reason: Cypress is an excellent choice for automating API testing in most scenar
 3)	Automate POST API to order 6 "merhaba-7days-1gb" eSIMs. Save the order ID to verify configured eSIMS through the GET API.
 4)	Automate GET API to list eSIMs related to your specific order Oobtained through step-3. Ensure the list contains 6 eSIMs, and that all of them have the "merhaba-7days-1gb" package slug.
 
-**Few Considerations**
-- We can add more log statements to print full API response or a particular API response object for debugging purpose for error scenarios.
-- We can add negative scenarios by playing around the configs and passing wrong tokens, header or body parameters.
-- Constants and Variables should be stored in an environment variable or test data file.
-- In real scenario, Ids and secrets should be stored in a Vault. As this is a test sandbox environemt, I am calling these parameters directly in the test file. 
+**Important Considerations**
+Important Considerations:
+•	In real scenario, Ids and secrets should be stored in a Vault. As this is a test sandbox environment, I am calling these parameters directly in the test file.
+•	We can add more log statements to print full API response or a particular API response object for debugging purpose for error scenarios.
+•	We can add negative scenarios for API Testing by playing around the configs and passing wrong tokens, header or body parameters.
+•	In an actual test project, Constants and Variables should be stored in an environment variable or test data file which can be called during the test execution.
 
-**For test cases steps, automation technique/strategy, test output and artefacts, kindly refer the other attached file- Task-1.docs**
+
+**For test cases steps, automation technique/strategy, test output and artefacts, kindly refer the other attached file- Task-1.pdf**
 
 
 
