@@ -27,6 +27,7 @@ Inside the cypress/e2e/ folder, create a new test file. Here I have automated an
 You can run the test in the Cypress Test Runner UI or headlessly
 
 
+
 **Overview of approach to implement the test case**
 
 Objective: Automate requests to the Airalo Partner API and validate the responses.
@@ -35,11 +36,12 @@ Choice of Framework/Language: Cypress/JavaScript
 
 Reason: Cypress is an excellent choice for automating API testing in most scenarios due to its ease of use, real-time debugging, and integration capabilities.
 
+
 **Automation Approach**
 1)	Define variables and constants
 2)	Automate POST API for obtaining OAuth2 tokens to access the Airalo Partner API, using the provided credentials and save the token to be used in subsequent AIRALO APIs
 3)	Automate POST API to order 6 "merhaba-7days-1gb" eSIMs. Save the order ID to verify configured eSIMS through the GET API.
-4)	Automate GET API to list eSIMs related to your specific order Oobtained through step-3. Ensure the list contains 6 eSIMs, and that all of them have the "merhaba-7days-1gb" package slug.
+4)	Automate GET API to list eSIMs related to your specific order obtained through step-3. Ensure the list contains 6 eSIMs, and that all of them have the "merhaba-7days-1gb" package slug.
 
 **Important Considerations**
 
